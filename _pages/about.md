@@ -1,56 +1,150 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+## 👋 About Me
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am **Zahra Abouhadi**, a Biomedical Engineer with a Master's degree in Bioelectrical Engineering from the University of Tehran. My research focuses on developing interpretable neural networks, computational neuroscience models, and advanced signal processing techniques for healthcare applications.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+I am passionate about understanding the brain through both **neural data analysis** and **artificial intelligence** approaches. My work spans from Parkinson's disease diagnosis using EEG signals to population-level neural coding during visual categorization.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+---
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+## 🎓 Education
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+### M.Sc. in Bioelectrical Engineering
+**University of Tehran** | Oct 2019 – Sept 2023  
+**Thesis:** *Parkinson's Disease Diagnosis Using EEG Signals and Interpretable SincNet-based Network*  
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+### B.Sc. in Bioelectrical Engineering
+**Sadjad University of Technology** | Oct 2014 – Sept 2018  
+**Project:** *Analyzing Data from Non-destructive Investigation of Magnetic Hysteresis in Steel*  
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
 
-**Markdown generator**
+---
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+## 🔬 Research Interests
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+- Medical Signal and Image Processing
+- Interpretable Neural Networks
+- Development of novel Artificial Neural Network models
+- Computational Neuroscience Models in Healthcare Applications
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+---
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+## 📄 Publications
+
+1. **Zahra Abouhadi**, Hamid Karimi-Rouzbahani.  
+   *"Dynamic reversal of IT-PFC information flow orchestrates visual categorization under perceptual uncertainty."*  
+   **Progress in Neurobiology**, 2026.  
+   [https://doi.org/10.1016/j.pneurobio.2026.102933](https://doi.org/10.1016/j.pneurobio.2026.102933)
+
+2. Khosrobevgi F, **Abouhadi Z**, Mahdizadeh A, Ashoori A, Niksirat N, Mirian MS, McKeown MJ.  
+   *"Automated Shoulder Girdle Rigidity Assessment in Parkinson's Disease via an Integrated Model- and Data-Driven Approach."*  
+   **Sensors**, 2025.  
+   [https://doi.org/10.3390/s25196019](https://doi.org/10.3390/s25196019)
+
+
+---
+
+## 🧠 Research Activities & Academic Projects
+
+### Population Neural Analysis During Flexible Visual Categorization  
+*Collaborative project with Dr. Hamid Karimi-Rouzbahani, Queensland Brain Institute, Australia*  
+- Conducted Representational Similarity Analysis (RSA) on monkey intracranial recording data (IT and PFC neurons)
+- Decoded and tracked information flow between Prefrontal and Inferior Temporal cortices during task performance
+- Investigated neural mechanisms underlying flexible visual categorization
+
+### Methodological Comparison of Functional Connectivity Techniques  
+*Collaborative project with Dr. Hamid Karimi-Rouzbahani and Dr. Hamed Nili (2025–Present)*  
+- Comparing FC, PPI, and DCM methods for functional connectivity analysis
+
+### Parkinson's Disease Detection using Weak Supervision (WS)  
+*Collaborative project with Pacific Parkinson's Research Center, UBC, Canada (2023–2025)*  
+- Motion signal (accelerometer-derived velocity/acceleration) classification for PD/HC
+- Automatic labeling of PD hand movement using Weak Supervision and Snorkel
+- Developed graphical model of Labeling Functions
+
+### Parkinson's Disease Diagnosis Using EEG Signals and Interpretable SincNet-based ANN  
+*M.Sc. Thesis*  
+- Preprocessed PD and healthy subjects' EEG signals using EEGLAB
+- Developed and coded ANN using PyTorch
+- Found neuroscience-based consistencies with Levodopa therapy in PD patients
+- Analysed SincNet Power Spectral Density (PSD) responses
+
+### Institute for Studies in Theoretical Physics and Mathematics (IPM)  
+*3rd Cognitive Neuroscience Competition – Teamwork*  
+- Designed Cognitive Task "Probabilistic Selection Task" (PST) using Inquisit Lab
+
+---
+
+## 💼 Professional Experience
+
+### Researcher – Cognitive Sciences and Technologies Innovation Center  
+*University of Science and Technology*  
+- Member of the Music and Cognition research team
+- Explored Deep Learning models for Emotion Recognition
+
+### Intern – Sleep and EEG Clinic, Ibn-Sinal Psychiatric Hospital  
+- Skilled in acquisition and processing of EEG signals
+- Developed foundational knowledge of EEG signal analysis and brain anatomy
+- Collaborated with a multidisciplinary team of healthcare professionals
+
+---
+
+## 🛠️ Skills
+
+### Artificial Neural Networks
+- **University Courses:** MLP, CNN, RNN, LSTM, GRU, Self-Organizing Maps, GANs
+- **Master's Thesis:** Interpretable NNs (SincNet)
+
+### MATLAB
+- **Coding:** Spiking neural activity analysis (Present), EEG signal preprocessing (2023)
+- **Toolboxes:** EEGLAB, PsychoToolbox
+
+### Python
+- **Frameworks:** Keras, TensorFlow 2.0, PyTorch, Snorkel
+- **Libraries:** Pandas, Seaborn, OpenCV
+
+### Language Skills
+- **English:** Professional – IELTS 8.0 (Reading: 9, Listening: 8, Speaking: 7.0, Writing: 7.0)
+- **Persian:** Native
+
+---
+
+## 📬 Contact
+
+- **Email:** Z.Abouhadi@gmail.com
+- **Phone:** +098-915-619-5002
+- **GitHub:** [https://github.com/Zahra-Abouhadi](https://github.com/Zahra-Abouhadi)
+- **LinkedIn:** [Your LinkedIn URL]
+
+---
+
+## 📚 References
+
+- **Dr. Hamid Karimi-Rouzbahani** (Current Project Supervisor)  
+  Research Fellow, Queensland Brain Institute, University of Queensland, Australia  
+  *h.karimi-rouzbahani@ug.edu.au*
+
+- **Dr. Seyed Kamaledin Setarehdan** (M.Sc. Thesis Supervisor)  
+  Professor, School of Electrical and Computer Engineering, University of Tehran, Iran  
+  *ksetareh@ut.ac.ir*
+
+- **Dr. Iman Ahadi Akhlaghi** (B.Sc. Thesis Supervisor)  
+  Associate Professor, School of Electrical and Bio-Electrical Engineering, Sadjad University of Technology
+
+---
+
+## 🔗 My Master's Thesis Code
+
+The complete MATLAB analysis pipeline for my thesis on **visual categorization and IT-PFC information flow** is available on GitHub:
+
+[**View the Thesis Code Repository**](https://github.com/Zahra-Abouhadi/your-thesis-repo)
+
+For more details about the methods and findings, see the [**Thesis Summary**](/thesis) page.
